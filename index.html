@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.12/dist/face-api.min.js"></script>
     <style>
         body {
@@ -12,7 +13,7 @@
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 15vh 10px 20px 10px;
         }
 
         h2 {
@@ -83,7 +84,7 @@
             padding: 16px 40px;
             font-size: 1.2rem;
             cursor: pointer;
-            background: #fa11f2;
+            background: #ffba0c;
             border: none;
             border-radius: 50px;
             font-weight: bold;
@@ -220,7 +221,6 @@
                 reel.style.transition = 'transform 3s cubic-bezier(0.15, 0, 0.15, 1)';
                 reel.style.transform = `translateY(-${finalY}px)`;
             });
-
             setTimeout(() => {
                 btn.disabled = false;
                 status.innerText = `🎉 全部相同！你的表情是：${targetEmoji}`;
